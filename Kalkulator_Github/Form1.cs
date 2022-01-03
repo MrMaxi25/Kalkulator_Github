@@ -19,6 +19,14 @@ namespace Kalkulator_Github
 
         private void button1_Click(object sender, EventArgs e)
         {
+            try
+            {
+                sum.Text = (int.Parse(NumberA.Text.ToString()) + int.Parse(NumberB.Text.ToString())).ToString();
+            }
+            catch (FormatException) 
+            {
+                MessageBox.Show("Podaj same cyfry");
+            }
 
         }
     }
