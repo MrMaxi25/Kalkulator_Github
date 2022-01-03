@@ -95,6 +95,7 @@ namespace Kalkulator_Github
             // 
             this.sum.Location = new System.Drawing.Point(111, 204);
             this.sum.Name = "sum";
+            this.sum.ReadOnly = true;
             this.sum.Size = new System.Drawing.Size(125, 25);
             this.sum.TabIndex = 5;
             // 
