@@ -29,34 +29,104 @@ namespace Kalkulator_Github
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.AddingButton = new System.Windows.Forms.Button();
+            this.NumberA = new System.Windows.Forms.TextBox();
+            this.NumberB = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.sum = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // button1
+            // AddingButton
             // 
-            this.button1.Location = new System.Drawing.Point(493, 119);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(94, 29);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Dodawanie";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.AddingButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.AddingButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.AddingButton.Location = new System.Drawing.Point(493, 119);
+            this.AddingButton.Name = "AddingButton";
+            this.AddingButton.Size = new System.Drawing.Size(100, 50);
+            this.AddingButton.TabIndex = 0;
+            this.AddingButton.Text = "Dodawanie";
+            this.AddingButton.UseVisualStyleBackColor = false;
+            this.AddingButton.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // NumberA
+            // 
+            this.NumberA.Location = new System.Drawing.Point(111, 84);
+            this.NumberA.Name = "NumberA";
+            this.NumberA.Size = new System.Drawing.Size(125, 25);
+            this.NumberA.TabIndex = 1;
+            // 
+            // NumberB
+            // 
+            this.NumberB.Location = new System.Drawing.Point(111, 144);
+            this.NumberB.Name = "NumberB";
+            this.NumberB.Size = new System.Drawing.Size(125, 25);
+            this.NumberB.TabIndex = 2;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(43, 87);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(67, 17);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Liczba 1:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(43, 147);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(67, 17);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Liczba 2:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(43, 207);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(47, 17);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "Suma";
+            // 
+            // sum
+            // 
+            this.sum.Location = new System.Drawing.Point(111, 204);
+            this.sum.Name = "sum";
+            this.sum.ReadOnly = true;
+            this.sum.Size = new System.Drawing.Size(125, 25);
+            this.sum.TabIndex = 5;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.sum);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.NumberB);
+            this.Controls.Add(this.NumberA);
+            this.Controls.Add(this.AddingButton);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button AddingButton;
+        private System.Windows.Forms.TextBox NumberA;
+        private System.Windows.Forms.TextBox NumberB;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox sum;
     }
 }
 
