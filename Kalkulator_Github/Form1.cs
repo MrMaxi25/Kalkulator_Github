@@ -21,7 +21,9 @@ namespace Kalkulator_Github
         {
             try
             {
-                sum.Text = (int.Parse(NumberA.Text) + int.Parse(NumberB.Text)).ToString();
+                int a = int.Parse(NumberA.Text);
+                int b = int.Parse(NumberB.Text);
+                sum.Text = (a + b).ToString();
             }
             catch (FormatException) 
             {
